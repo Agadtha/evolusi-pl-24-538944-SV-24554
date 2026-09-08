@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,21 +13,42 @@
 </head>
 
 
-<body>
+<body class="bg-black text-white">
 
     <!-- Navbar -->
+    <nav class="flex items-center justify-between px-10 py-6 bg-black">
 
-    <nav>
+        <!-- Logo / Game Title -->
+        <a href="/" class="text-2xl font-bold tracking-widest">
+            NIR:MESIAS
+        </a>
 
-        <h1>MyBrand</h1>
 
-        <div>
+        <!-- Navigation -->
+        <div class="flex items-center gap-10 text-sm tracking-widest">
 
-            <a href="/">Home</a>
+            <a 
+                href="/"
+                class="text-gray-400 hover:text-white transition duration-300"
+            >
+                HOME
+            </a>
 
-            <a href="/about">Tentang</a>
 
-            <a href="/contact">Kontak</a>
+            <a 
+                href="/news"
+                class="text-gray-400 hover:text-white transition duration-300"
+            >
+                NEWS
+            </a>
+
+
+            <a 
+                href="/about"
+                class="text-gray-400 hover:text-white transition duration-300"
+            >
+                ABOUT
+            </a>
 
         </div>
 
@@ -36,24 +56,11 @@
 
 
     <!-- Content -->
-
     <main>
 
         @yield('content')
 
     </main>
-
-
-    <!-- Footer -->
-
-    <footer>
-
-        <p>
-            © 2026 MyBrand
-        </p>
-
-    </footer>
-
 
 </body>
 
